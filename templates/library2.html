@@ -1,0 +1,553 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+         <div class="single-channel-page" id="content-wrapper">
+            <div class="single-channel-image">
+               <img class="img-fluid" alt="" src="{{url_for('static', filename='img/library/cover/byjus (2).jpg')}}">
+               <div class="channel-profile">
+                  <img class="channel-profile-img" alt="" src="{{url_for('static', filename='img/library/byjus.jpg')}}">
+                  <div class="social hidden-xs">
+                     Social &nbsp;
+                     <a class="fb" href="#">Facebook</a>
+                     <a class="tw" href="#">Twitter</a>
+                     <a class="gp" href="#">Google</a>
+                  </div>
+               </div>
+            </div>
+            <div class="single-channel-nav">
+               <nav class="navbar navbar-expand-lg navbar-light">
+                  <a class="channel-brand" href="#">Osahan Channel <span title="" data-placement="top" data-toggle="tooltip" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></span></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <!--
+                  <div class="bg-white p-3 widget shadow rounded mb-4">
+                     <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                           <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Summary</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Cast
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" id="videos-tab" data-toggle="tab" href="#videos" role="tab" aria-controls="videos" aria-selected="false">Videos
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Reviews</a>
+                        </li>
+                     </ul>
+                  </div>-->
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav mr-auto" id="myTab" role="tablist">
+                        <li class="nav-item">
+                           <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile">Modules</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" id="videos-tab" data-toggle="tab" href="#videos">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" id="category-tab" data-toggle="tab" href="#category" >Categories</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" >About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Search
+                           </a>
+                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                           </div>
+                        </li>
+                     </ul>
+                     <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control form-control-sm mr-sm-1" type="search" placeholder="Search" aria-label="Search"><button class="btn btn-outline-success btn-sm my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button> &nbsp;&nbsp;&nbsp; <button class="btn btn-outline-danger btn-sm" type="button">Subscribe <strong>1.4M</strong></button>
+                     </form>
+                  </div>
+               </nav>
+            </div>
+            <div class="container-fluid">
+               <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                     <h5 class="mt-0 mb-3">New Year's Eve on the Waterfront</h5>
+                     <p>Boston Harbor Now in partnership with the Friends of Christopher Columbus Park, the Wharf District Council and the City of Boston is proud to announce the New Year's Eve Midnight Harbor Fireworks! This beloved nearly 40-year old tradition is made possible by the generous support of local waterfront organizations and businesses and the support of the City of Boston and the Office of Mayor Marty Walsh.</p>
+                     <p>Join us as we ring in the New Year with a dazzling display over Boston Harbor. Public viewing is free and available from the Harborwalk of these suggested viewing locations:</p>
+                     <ul>
+                        <li>Christopher Columbus Park, North End</li>
+                        <li>Fan Pier, Seaport District</li>
+                        <li>East Boston Harborwalk</li>
+                     </ul>
+                     <p>The show will begin promptly at midnight.</p>
+                     <p>Register here for a reminder and updates about the harbor fireworks and other waterfront public programs as they become available. Be the first to be notified for popular waterfront New Year's Eve public activities.</p>
+             <p class="mb-2">Register here for a reminder and updates about the harbor fireworks and other waterfront public programs as they become available. Be the first to be notified for popular waterfront New Year's Eve public activities.</p>
+                  </div>
+                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                     <div class="row">
+                        <div class="col-xl-4 col-lg-4">
+                           <h5 class="h6 mt-0 mb-3 font-weight-bold text-gray-900">CAST</h5>
+                           <div class="artist-list mb-3">
+                              <a class="d-flex align-items-center" href="#">
+                                 <div class="dropdown-list-image mr-3">
+                                    <img class="rounded-circle" src="img/s1.png" alt="">
+                                    <div class="status-indicator bg-success"></div>
+                                 </div>
+                                 <div class="font-weight-bold">
+                                    <div class="text-truncate">Carla Gugino</div>
+                                    <div class="small text-gray-500">Acting</div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="artist-list mb-3">
+                              <a class="d-flex align-items-center" href="#">
+                                 <div class="dropdown-list-image mr-3">
+                                    <img class="rounded-circle" src="img/s2.png" alt="">
+                                    <div class="status-indicator bg-success"></div>
+                                 </div>
+                                 <div class="font-weight-bold">
+                                    <div class="text-truncate">Sylvester Stallone</div>
+                                    <div class="small text-gray-500">Acting</div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="artist-list mb-3">
+                              <a class="d-flex align-items-center" href="#">
+                                 <div class="dropdown-list-image mr-3">
+                                    <img class="rounded-circle" src="img/s3.png" alt="">
+                                    <div class="status-indicator bg-success"></div>
+                                 </div>
+                                 <div class="font-weight-bold">
+                                    <div class="text-truncate">Rose Byrne</div>
+                                    <div class="small text-gray-500">Acting</div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="artist-list mb-3">
+                              <a class="d-flex align-items-center" href="#">
+                                 <div class="dropdown-list-image mr-3">
+                                    <img class="rounded-circle" src="img/s4.png" alt="">
+                                    <div class="status-indicator bg-success"></div>
+                                 </div>
+                                 <div class="font-weight-bold">
+                                    <div class="text-truncate">Jason Statham</div>
+                                    <div class="small text-gray-500">Acting</div>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4">
+                           <h5 class="h6 mt-0 mb-3 font-weight-bold text-gray-900">CREW</h5>
+                           <div class="artist-list mb-3">
+                              <a class="d-flex align-items-center" href="#">
+                                 <div class="dropdown-list-image mr-3">
+                                    <img class="rounded-circle" src="img/s3.png" alt="">
+                                    <div class="status-indicator bg-success"></div>
+                                 </div>
+                                 <div class="font-weight-bold">
+                                    <div class="text-truncate">Rose Byrne</div>
+                                    <div class="small text-gray-500">Acting</div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="artist-list mb-3">
+                              <a class="d-flex align-items-center" href="#">
+                                 <div class="dropdown-list-image mr-3">
+                                    <img class="rounded-circle" src="img/s4.png" alt="">
+                                    <div class="status-indicator bg-success"></div>
+                                 </div>
+                                 <div class="font-weight-bold">
+                                    <div class="text-truncate">Jason Statham</div>
+                                    <div class="small text-gray-500">Acting</div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="artist-list mb-3">
+                              <a class="d-flex align-items-center" href="#">
+                                 <div class="dropdown-list-image mr-3">
+                                    <img class="rounded-circle" src="img/s1.png" alt="">
+                                    <div class="status-indicator bg-success"></div>
+                                 </div>
+                                 <div class="font-weight-bold">
+                                    <div class="text-truncate">Carla Gugino</div>
+                                    <div class="small text-gray-500">Acting</div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="artist-list mb-3">
+                              <a class="d-flex align-items-center" href="#">
+                                 <div class="dropdown-list-image mr-3">
+                                    <img class="rounded-circle" src="img/s2.png" alt="">
+                                    <div class="status-indicator bg-success"></div>
+                                 </div>
+                                 <div class="font-weight-bold">
+                                    <div class="text-truncate">Sylvester Stallone</div>
+                                    <div class="small text-gray-500">Acting</div>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4">
+                           <h5 class="h6 mt-0 mb-3 font-weight-bold text-gray-900">Support</h5>
+                           <div class="artist-list mb-3">
+                              <a class="d-flex align-items-center" href="#">
+                                 <div class="dropdown-list-image mr-3">
+                                    <img class="rounded-circle" src="img/s1.png" alt="">
+                                    <div class="status-indicator bg-success"></div>
+                                 </div>
+                                 <div class="font-weight-bold">
+                                    <div class="text-truncate">Carla Gugino</div>
+                                    <div class="small text-gray-500">Acting</div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="artist-list mb-3">
+                              <a class="d-flex align-items-center" href="#">
+                                 <div class="dropdown-list-image mr-3">
+                                    <img class="rounded-circle" src="img/s2.png" alt="">
+                                    <div class="status-indicator bg-success"></div>
+                                 </div>
+                                 <div class="font-weight-bold">
+                                    <div class="text-truncate">Sylvester Stallone</div>
+                                    <div class="small text-gray-500">Acting</div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="artist-list mb-3">
+                              <a class="d-flex align-items-center" href="#">
+                                 <div class="dropdown-list-image mr-3">
+                                    <img class="rounded-circle" src="img/s3.png" alt="">
+                                    <div class="status-indicator bg-success"></div>
+                                 </div>
+                                 <div class="font-weight-bold">
+                                    <div class="text-truncate">Rose Byrne</div>
+                                    <div class="small text-gray-500">Acting</div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="artist-list mb-3">
+                              <a class="d-flex align-items-center" href="#">
+                                 <div class="dropdown-list-image mr-3">
+                                    <img class="rounded-circle" src="img/s4.png" alt="">
+                                    <div class="status-indicator bg-success"></div>
+                                 </div>
+                                 <div class="font-weight-bold">
+                                    <div class="text-truncate">Jason Statham</div>
+                                    <div class="small text-gray-500">Acting</div>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">
+                     <div class="row">
+                        <div class="col-xl-6 col-lg-6">
+                           <div class="mb-4">
+                              <iframe width="100%" height="215" src="https://www.youtube.com/embed/uNppTCoYdWI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                           <div class="mb-4">
+                              <iframe width="100%" height="215" src="https://www.youtube.com/embed/XkT6uwHFUKY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                           <div class="mb-4">
+                              <iframe width="100%" height="215" src="https://www.youtube.com/embed/uNppTCoYdWI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                           <div class="mb-4">
+                              <iframe width="100%" height="215" src="https://www.youtube.com/embed/XkT6uwHFUKY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="tab-pane fade " id="category" role="tabpanel" aria-labelledby="category-tab" >
+                  <div class="video-block section-padding row">
+                     <div class="col-md-12">
+                        <div class="main-title">
+                           <div class="btn-group float-right right-action">
+                              <a href="#" class="right-action-link text-gray" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Sort by <i class="fa fa-caret-down" aria-hidden="true"></i>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-right">
+                                 <a class="dropdown-item" href="#"><i class="fas fa-fw fa-star"></i> &nbsp; Top Rated</a>
+                                 <a class="dropdown-item" href="#"><i class="fas fa-fw fa-signal"></i> &nbsp; Viewed</a>
+                                 <a class="dropdown-item" href="#"><i class="fas fa-fw fa-times-circle"></i> &nbsp; Close</a>
+                              </div>
+                           </div>
+                           <h6>Videos</h6>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="video-card">
+                           <div class="video-card-image">
+                              <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                              <a href="#"><img class="img-fluid" src="img/v1.png" alt=""></a>
+                              <div class="time">3:50</div>
+                           </div>
+                           <div class="video-card-body">
+                              <div class="video-title">
+                                 <a href="#">There are many variations of passages of Lorem</a>
+                              </div>
+                              <div class="video-page text-success">
+                                 Education  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                              </div>
+                              <div class="video-view">
+                                 1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="video-card">
+                           <div class="video-card-image">
+                              <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                              <a href="#"><img class="img-fluid" src="img/v2.png" alt=""></a>
+                              <div class="time">3:50</div>
+                           </div>
+                           <div class="video-card-body">
+                              <div class="video-title">
+                                 <a href="#">There are many variations of passages of Lorem</a>
+                              </div>
+                              <div class="video-page text-success">
+                                 Education  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                              </div>
+                              <div class="video-view">
+                                 1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="video-card">
+                           <div class="video-card-image">
+                              <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                              <a href="#"><img class="img-fluid" src="img/v3.png" alt=""></a>
+                              <div class="time">3:50</div>
+                           </div>
+                           <div class="video-card-body">
+                              <div class="video-title">
+                                 <a href="#">There are many variations of passages of Lorem</a>
+                              </div>
+                              <div class="video-page text-danger">
+                                 Education  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Unverified"><i class="fas fa-frown text-danger"></i></a>
+                              </div>
+                              <div class="video-view">
+                                 1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="video-card">
+                           <div class="video-card-image">
+                              <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                              <a href="#"><img class="img-fluid" src="img/v4.png" alt=""></a>
+                              <div class="time">3:50</div>
+                           </div>
+                           <div class="video-card-body">
+                              <div class="video-title">
+                                 <a href="#">There are many variations of passages of Lorem</a>
+                              </div>
+                              <div class="video-page text-success">
+                                 Education  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                              </div>
+                              <div class="video-view">
+                                 1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="video-card">
+                           <div class="video-card-image">
+                              <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                              <a href="#"><img class="img-fluid" src="img/v5.png" alt=""></a>
+                              <div class="time">3:50</div>
+                           </div>
+                           <div class="video-card-body">
+                              <div class="video-title">
+                                 <a href="#">There are many variations of passages of Lorem</a>
+                              </div>
+                              <div class="video-page text-success">
+                                 Education  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                              </div>
+                              <div class="video-view">
+                                 1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="video-card">
+                           <div class="video-card-image">
+                              <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                              <a href="#"><img class="img-fluid" src="img/v6.png" alt=""></a>
+                              <div class="time">3:50</div>
+                           </div>
+                           <div class="video-card-body">
+                              <div class="video-title">
+                                 <a href="#">There are many variations of passages of Lorem</a>
+                              </div>
+                              <div class="video-page text-danger">
+                                 Education  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Unverified"><i class="fas fa-frown text-danger"></i></a>
+                              </div>
+                              <div class="video-view">
+                                 1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="video-card">
+                           <div class="video-card-image">
+                              <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                              <a href="#"><img class="img-fluid" src="img/v7.png" alt=""></a>
+                              <div class="time">3:50</div>
+                           </div>
+                           <div class="video-card-body">
+                              <div class="video-title">
+                                 <a href="#">There are many variations of passages of Lorem</a>
+                              </div>
+                              <div class="video-page text-success">
+                                 Education  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                              </div>
+                              <div class="video-view">
+                                 1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="video-card">
+                           <div class="video-card-image">
+                              <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                              <a href="#"><img class="img-fluid" src="img/v8.png" alt=""></a>
+                              <div class="time">3:50</div>
+                           </div>
+                           <div class="video-card-body">
+                              <div class="video-title">
+                                 <a href="#">There are many variations of passages of Lorem</a>
+                              </div>
+                              <div class="video-page text-success">
+                                 Education  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                              </div>
+                              <div class="video-view">
+                                 1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="video-card">
+                           <div class="video-card-image">
+                              <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                              <a href="#"><img class="img-fluid" src="img/v1.png" alt=""></a>
+                              <div class="time">3:50</div>
+                           </div>
+                           <div class="video-card-body">
+                              <div class="video-title">
+                                 <a href="#">There are many variations of passages of Lorem</a>
+                              </div>
+                              <div class="video-page text-success">
+                                 Education  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                              </div>
+                              <div class="video-view">
+                                 1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="video-card">
+                           <div class="video-card-image">
+                              <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                              <a href="#"><img class="img-fluid" src="img/v2.png" alt=""></a>
+                              <div class="time">3:50</div>
+                           </div>
+                           <div class="video-card-body">
+                              <div class="video-title">
+                                 <a href="#">There are many variations of passages of Lorem</a>
+                              </div>
+                              <div class="video-page text-success">
+                                 Education  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                              </div>
+                              <div class="video-view">
+                                 1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="video-card">
+                           <div class="video-card-image">
+                              <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                              <a href="#"><img class="img-fluid" src="img/v3.png" alt=""></a>
+                              <div class="time">3:50</div>
+                           </div>
+                           <div class="video-card-body">
+                              <div class="video-title">
+                                 <a href="#">There are many variations of passages of Lorem</a>
+                              </div>
+                              <div class="video-page text-danger">
+                                 Education  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Unverified"><i class="fas fa-frown text-danger"></i></a>
+                              </div>
+                              <div class="video-view">
+                                 1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="video-card">
+                           <div class="video-card-image">
+                              <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                              <a href="#"><img class="img-fluid" src="img/v4.png" alt=""></a>
+                              <div class="time">3:50</div>
+                           </div>
+                           <div class="video-card-body">
+                              <div class="video-title">
+                                 <a href="#">There are many variations of passages of Lorem</a>
+                              </div>
+                              <div class="video-page text-success">
+                                 Education  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                              </div>
+                              <div class="video-view">
+                                 1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div><!--
+                  <nav aria-label="Page navigation example">
+                     <ul class="pagination justify-content-center pagination-sm mb-0">
+                        <li class="page-item disabled">
+                           <a tabindex="-1" href="#" class="page-link">Previous</a>
+                        </li>
+                        <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item">
+                           <a href="#" class="page-link">Next</a>
+                        </li>
+                     </ul>
+                  </nav>-->
+               </div>
+            </div>
+         </div>
+
+{% endblock %}
+         

@@ -1,0 +1,114 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+         <div id="content-wrapper">
+            <div class="container-fluid">
+               <div class="video-block section-padding">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="main-title">
+                           <div class="btn-group float-right right-action">
+                              <a href="#" class="right-action-link text-gray" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Sort by <i class="fa fa-caret-down" aria-hidden="true"></i>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-right">
+                                 <a class="dropdown-item" href="#"><i class="fas fa-fw fa-star"></i> &nbsp; Top Rated</a>
+                                 <a class="dropdown-item" href="#"><i class="fas fa-fw fa-signal"></i> &nbsp; Viewed</a>
+                                 <a class="dropdown-item" href="#"><i class="fas fa-fw fa-times-circle"></i> &nbsp; Close</a>
+                              </div>
+                           </div>
+                           <h6>Subscriptions</h6>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="channels-card">
+                           <div class="channels-card-image">
+                              <a href="#"><img class="img-fluid" src="{{url_for('static', filename='img/library/igcse account.jpg')}}" alt=""></a>
+                              <div class="channels-card-image-btn"><button type="button" class="btn btn-secondary btn-sm border-none">Subscribed <strong>1.4M</strong></button> <button type="button" class="btn btn-warning btn-sm border-none"><i class="fas fa-times-circle"></i></button></div>
+                           </div>
+                           <div class="channels-card-body">
+                              <div class="channels-title">
+                                 <a href="#">Igcse Account <span title="" data-placement="top" data-toggle="tooltip" data-original-title="Verified"><i class="fas fa-check-circle"></i></span></a>
+                              </div>
+                              <div class="channels-view">
+                                 382,323 subscribers
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="channels-card">
+                           <div class="channels-card-image">
+                              <a href="#"><img class="img-fluid" src="{{url_for('static', filename='img/library/oasdom.jpg')}}" alt=""></a>
+                              <div class="channels-card-image-btn"><button type="button" class="btn btn-secondary btn-sm border-none">Subscribed <strong>1.4M</strong></button> <button type="button" class="btn btn-warning btn-sm border-none"><i class="fas fa-times-circle"></i></button></div>
+                           </div>
+                           <div class="channels-card-body">
+                              <div class="channels-title">
+                                 <a href="#">Oasdom <span title="" data-placement="top" data-toggle="tooltip" data-original-title="Verified"><i class="fas fa-check-circle"></i></span></a>
+                              </div>
+                              <div class="channels-view">
+                                 382,323 subscribers
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="channels-card">
+                           <div class="channels-card-image">
+                              <a href="#"><img class="img-fluid" src="{{url_for('static', filename='img/library/khan academy logo.jpg')}}" alt=""></a>
+                              <div class="channels-card-image-btn"><button type="button" class="btn btn-secondary btn-sm border-none">Subscribed <strong>1.4M</strong></button> <button type="button" class="btn btn-warning btn-sm border-none"><i class="fas fa-times-circle"></i></button></div>
+                           </div>
+                           <div class="channels-card-body">
+                              <div class="channels-title">
+                                 <a href="#">khan Academy <span title="" data-placement="top" data-toggle="tooltip" data-original-title="Verified"><i class="fas fa-check-circle"></i></span></a>
+                              </div>
+                              <div class="channels-view">
+                                 382,323 subscribers
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="channels-card">
+                           <div class="channels-card-image">
+                              <a href="#"><img class="img-fluid" src="{{url_for('static', filename='img/library/starlab academy.png')}}" alt=""></a>
+                              <div class="channels-card-image-btn"><button type="button" class="btn btn-secondary btn-sm border-none">Subscribed <strong>1.4M</strong></button> <button type="button" class="btn btn-warning btn-sm border-none"><i class="fas fa-times-circle"></i></button></div>
+                           </div>
+                           <div class="channels-card-body">
+                              <div class="channels-title">
+                                 <a href="#">StarLab Academy <span title="" data-placement="top" data-toggle="tooltip" data-original-title="Verified"><i class="fas fa-check-circle"></i></span></a>
+                              </div>
+                              <div class="channels-view">
+                                 382,323 subscribers
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="channels-card">
+                           <div class="channels-card-image">
+                              <a href="#"><img class="img-fluid" src="{{url_for('static', filename='img/library/byjus.jpg')}}" alt=""></a>
+                              <div class="channels-card-image-btn"><button type="button" class="btn btn-secondary btn-sm border-none">Subscribed <strong>1.4M</strong></button> <button type="button" class="btn btn-warning btn-sm border-none"><i class="fas fa-times-circle"></i></button></div>
+                           </div>
+                           <div class="channels-card-body">
+                              <div class="channels-title">
+                                 <a href="#">Byju <span title="" data-placement="top" data-toggle="tooltip" data-original-title="Verified"><i class="fas fa-check-circle"></i></span></a>
+                              </div>
+                              <div class="channels-view">
+                                 382,323 subscribers
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="text-center mt-1 mb-4 col-12">
+                     <div class="spinner-border" role="status">
+                        <span class="sr-only">Loading...</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+{% endblock %}
