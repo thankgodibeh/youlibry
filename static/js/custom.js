@@ -6,7 +6,19 @@ Version: 1.0
 */
 (function($) {
   "use strict"; // Start of use strict
-	
+  
+  
+//-------------------------------------//
+// init Infinte Scroll
+
+$('.container').infiniteScroll({
+  path: getPenPath,
+  append: '.post',
+  elementScroll: '.scroll-container',
+  status: '.page-load-status',
+});
+
+
 	// Top navigation
   var lastScrollTop = 0;
   var $navbar = $('.navbar-scrollup-js');

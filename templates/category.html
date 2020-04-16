@@ -13,7 +13,7 @@
                            </div>
                            <div class="mr-5"><b>26</b> Libraries</div>
                         </div>
-                        <a class="card-footer text-white clearfix small z-1" href="#">
+                        <a class="card-footer text-white clearfix small z-1" href="{{url_for('libraries')}}">
                            <!--from osahan.min.css i removed background-color:#f8f9fc from card-footer-->
                         <span class="float-left">View Details</span>
                         <span class="float-right">
@@ -30,7 +30,7 @@
                            </div>
                            <div class="mr-5"><b>156</b> Courses</div>
                         </div>
-                        <a class="card-footer text-white clearfix small z-1" href="#">
+                        <a class="card-footer text-white clearfix small z-1" href="{{url_for('category')}}">
                         <span class="float-left">View Details</span>
                         <span class="float-right">
                         <i class="fas fa-angle-right"></i>
@@ -46,7 +46,7 @@
                            </div>
                            <div class="mr-5"><b>1233</b> Modules</div>
                         </div>
-                        <a class="card-footer text-white clearfix small z-1" href="#">
+                        <a class="card-footer text-white clearfix small z-1" href="{{url_for('category')}}">
                         <span class="float-left">View Details</span>
                         <span class="float-right">
                         <i class="fas fa-angle-right"></i>
@@ -62,7 +62,7 @@
                            </div>
                            <div class="mr-5"><b>13</b> Live Now</div>
                         </div>
-                        <a class="card-footer text-white clearfix small z-1" href="#">
+                        <a class="card-footer text-white clearfix small z-1" href="{{url_for('live')}}">
                         <span class="float-left">View Details</span>
                         <span class="float-right">
                         <i class="fas fa-angle-right"></i>
@@ -72,16 +72,26 @@
                   </div>
                </div>
                <div class="single-video-info-content box mb-3">
-                              <h6><a href="#">High School Education or Name of library</a> <i class="fas fa-angle-right"></i> Math(Name of Category)</h6>
-                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved overVarious versions have evolved over the years, sometimes </p>
+                              <h6>
+                                 <a href="{{url_for('categories')}}">YouLibry Collection</a> <i class="fas fa-angle-right"></i> Arts & humanities
+                              </h6>
+                              <p>
+                                 It is a long established fact that a reader will be distracted by the readable content
+                                 of a page when looking at its layout. The point of using Lorem Ipsum is that it has a 
+                                 more-or-less normal distribution of letters, as opposed to using 'Content here, content 
+                                 here', making it look like readable English. Many desktop publishing packages and web page 
+                                 editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will 
+                                 uncover many web sites still in their infancy. Various versions have evolved overVarious 
+                                 versions have evolved over the years, sometimes
+                              </p>
                               <h6>Available Courses:</h6>
                               <p class="tags mb-0">
-                                 <span><a href="view-course.html">Early Math</a></span>
-                                 <span><a href="#">Arithmetic</a></span>
-                                 <span><a href="#">Pre-algebra</a></span>
-                                 <span><a href="#">Algebra 1</a></span>
-                                 <span><a href="#">Geometry</a></span>
-                                 <span><a href="#">+ 6</a></span>
+                                 <span><a href="{{url_for('view')}}">Early Math</a></span>
+                                 <span><a href="{{url_for('view')}}">Arithmetic</a></span>
+                                 <span><a href="{{url_for('view')}}">Pre-algebra</a></span>
+                                 <span><a href="{{url_for('view')}}">Algebra 1</a></span>
+                                 <span><a href="{{url_for('view')}}">Geometry</a></span>
+                                 <span><a href="{{url_for('view')}}">+ 6</a></span>
                               </p>
                            </div>
                <hr>
@@ -95,12 +105,12 @@
                      <div class="col-xl-3 col-sm-6 mb-3">
                         <div class="channels-card">
                            <div class="channels-card-image">
-                              <a href="#"><img class="img-fluid" src="{{url_for('static', filename='img/library/byjus.jpg')}}" alt=""></a>
+                              <a href="{{url_for('library')}}"><img class="img-fluid" src="{{url_for('static', filename='img/library/byjus.jpg')}}" alt=""></a>
                               <div class="channels-card-image-btn"><button type="button" class="btn btn-danger btn-sm">Subscribe <strong>1.4M</strong></button></div>
                            </div>
                            <div class="channels-card-body">
                               <div class="channels-title">
-                                 <a href="#">Byju</a>
+                                 <a href="{{url_for('library')}}">Byju</a>
                               </div>
                               <div class="channels-view">
                                  382,323 subscribers
@@ -111,12 +121,12 @@
                      <div class="col-xl-3 col-sm-6 mb-3">
                         <div class="channels-card">
                            <div class="channels-card-image">
-                              <a href="#"><img class="img-fluid" src="{{url_for('static', filename='img/library/AK lectures.jpg')}}" alt=""></a>
+                              <a href="{{url_for('library')}}"><img class="img-fluid" src="{{url_for('static', filename='img/library/AK lectures.jpg')}}" alt=""></a>
                               <div class="channels-card-image-btn"><button type="button" class="btn btn-danger btn-sm">Subscribe <strong>1.4M</strong></button></div>
                            </div>
                            <div class="channels-card-body">
                               <div class="channels-title">
-                                 <a href="#">AK lectures</a>
+                                 <a href="{{url_for('library')}}">AK lectures</a>
                               </div>
                               <div class="channels-view">
                                  382,323 subscribers
@@ -127,12 +137,12 @@
                      <div class="col-xl-3 col-sm-6 mb-3">
                         <div class="channels-card">
                            <div class="channels-card-image">
-                              <a href="#"><img class="img-fluid" src="{{url_for('static', filename='img/library/AMrita logo.jpg')}}" alt=""></a>
+                              <a href="{{url_for('library')}}"><img class="img-fluid" src="{{url_for('static', filename='img/library/AMrita logo.jpg')}}" alt=""></a>
                               <div class="channels-card-image-btn"><button type="button" class="btn btn-secondary btn-sm">Subscribed <strong>1.4M</strong></button></div>
                            </div>
                            <div class="channels-card-body">
                               <div class="channels-title">
-                                 <a href="#">AMrita logo <span title="" data-placement="top" data-toggle="tooltip" data-original-title="Verified"><i class="fas fa-check-circle"></i></span></a>
+                                 <a href="{{url_for('library')}}">AMrita logo <span title="" data-placement="top" data-toggle="tooltip" data-original-title="Verified"><i class="fas fa-check-circle"></i></span></a>
                               </div>
                               <div class="channels-view">
                                  382,323 subscribers
@@ -143,12 +153,12 @@
                      <div class="col-xl-3 col-sm-6 mb-3">
                         <div class="channels-card">
                            <div class="channels-card-image">
-                              <a href="#"><img class="img-fluid" src="{{url_for('static', filename='img/library/2 mc.png')}}" alt=""></a>
+                              <a href="{{url_for('library')}}"><img class="img-fluid" src="{{url_for('static', filename='img/library/2 mc.png')}}" alt=""></a>
                               <div class="channels-card-image-btn"><button type="button" class="btn btn-danger btn-sm">Subscribe <strong>1.4M</strong></button></div>
                            </div>
                            <div class="channels-card-body">
                               <div class="channels-title">
-                                 <a href="#">2 Minute Classroom</a>
+                                 <a href="{{url_for('library')}}">2 Minute Classroom</a>
                               </div>
                               <div class="channels-view">
                                  382,323 subscribers

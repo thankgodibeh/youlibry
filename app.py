@@ -19,25 +19,16 @@ def home():
 
 @app.route('/trending')
 def trending():
-    """Renders the contact page."""
+    """Renders the trending page."""
     return render_template(
         'trending.html',
         title='Trending | YouLibry eLearning Facility ',
         year=datetime.now().year
     )
 
-@app.route('/home2')
-def home2():
-    """Renders the contact page."""
-    return render_template(
-        'index0.html',
-        title='Home2 | YouLibry eLearning Facility ',
-        year=datetime.now().year
-    )
-
 @app.route('/explore')
 def explore():
-    """Renders the contact page."""
+    """Renders the explore page."""
     return render_template(
         'explore.html',
         title='Explore | YouLibry eLearning Facility ',
@@ -46,7 +37,7 @@ def explore():
 
 @app.route('/live')
 def live():
-    """Renders the contact page."""
+    """Renders the live page."""
     return render_template(
         'live.html',
         title='Live Classroom | YouLibry eLearning Facility ',
@@ -55,7 +46,7 @@ def live():
 
 @app.route('/view')
 def view():
-    """Renders the contact page."""
+    """Renders the view page."""
     return render_template(
         'view.html',
         title='View Video or Playlist | YouLibry eLearning Facility ',
@@ -65,7 +56,7 @@ def view():
 
 @app.route('/libraries')
 def libraries():
-    """Renders the contact page."""
+    """Renders the libraries page."""
     return render_template(
         'libraries.html',
         title='Libraries | YouLibry eLearning Facility',
@@ -74,7 +65,7 @@ def libraries():
 
 @app.route('/categories')
 def categories():
-    """Renders the contact page."""
+    """Renders the categories page."""
     return render_template(
         'categories.html',
         title='Categories | YouLibry eLearning Facility',
@@ -83,7 +74,7 @@ def categories():
 
 @app.route('/historypage')
 def historypage():
-    """Renders the contact page."""
+    """Renders the history page."""
     return render_template(
         'history-page.html',
         title='History | YouLibry eLearning Facility',
@@ -92,76 +83,138 @@ def historypage():
 
 @app.route('/subscriptions')
 def subscriptions():
-    """Renders the contact page."""
+    """Renders the subscriptions page."""
     return render_template(
         'subscriptions.html',
-        title='subscriptions',
+        title='Subscriptions | YouLibry eLearning Facility ',
         year=datetime.now().year
     )
 
+@app.route('/subscriptions2')
+def subscriptions2():
+    """Renders the subscriptions page."""
+    return render_template(
+        'subscriptions2.html',
+        title='Subscriptions | YouLibry eLearning Facility ',
+        year=datetime.now().year
+    )
+
+
+@app.route('/subscriptions3')
+def subscriptions3():
+    """Renders the subscriptions page."""
+    return render_template(
+        'subscriptions3.html',
+        title='Subscriptions | YouLibry eLearning Facility ',
+        year=datetime.now().year
+    )
+
+
+@app.route('/subscriptions4')
+def subscriptions4():
+    """Renders the subscriptions page."""
+    return render_template(
+        'subscriptions4.html',
+        title='Subscriptions | YouLibry eLearning Facility ',
+        year=datetime.now().year
+    )
+
+
 @app.route('/library')
 def library():
-    """Renders the contact page."""
+    """Renders the library page."""
     return render_template(
         'library.html',
-        title='library',
+        title='Name of library | YouLibry eLearning Facility ',
         year=datetime.now().year
     )
 
 @app.route('/library2')
 def library2():
-    """Renders the contact page."""
+    """Renders the library page."""
     return render_template(
         'library2.html',
-        title='library',
+        title='Name of library | YouLibry eLearning Facility ',
         year=datetime.now().year
     )
 
 
 @app.route('/category')
 def category():
-    """Renders the contact page."""
+    """Renders the category page."""
     return render_template(
         'category.html',
-        title='library account',
+        title='Name of category | YouLibry eLearning Facility ',
         year=datetime.now().year
     )
 
 @app.route('/login')
 def login():
-    """Renders the contact page."""
+    """Renders the login page."""
     return render_template(
         'login.html',
         title='Login | YouLibry eLearning Facility',
         year=datetime.now().year
     )
 
-@app.route('/videopage')
-def videopage():
-    """Renders the contact page."""
+@app.route('/register')
+def register():
+    """Renders the register page."""
     return render_template(
-        'video-page.html',
-        title='video page',
+        'register.html',
+        title='Register | YouLibry eLearning Facility ',
         year=datetime.now().year
     )
 
-@app.route('/uploadvideo')
-def uploadvideo():
-    """Renders the contact page."""
+@app.route('/forgotpassword')
+def forgotpassword():
+    """Renders the forgot-password page."""
     return render_template(
-        'upload-video.html',
-        title='upload video',
+        'forgot-password.html',
+        title='Forgot Password | YouLibry eLearning Facility ',
         year=datetime.now().year
     )
 
-@app.route('/courses')
-def courses():
-    """Renders the contact page."""
+@app.route('/profile')
+def profile():
+    """Renders the profile page."""
     return render_template(
-        'courses.html',
-        title='library account',
+        'profile.html',
+        title='Profile | YouLibry eLearning Facility ',
         year=datetime.now().year
     )
+
+@app.route('/settings')
+def settings():
+    """Renders the settings page."""
+    return render_template(
+        'settings.html',
+        title='Settings | YouLibry eLearning Facility ',
+        year=datetime.now().year
+    )
+
+
+@app.route('/notfound')
+def notfound():
+    """Renders the 404 page."""
+    return render_template(
+        '404.html',
+        title='Page Not Found! | YouLibry eLearning Facility ',
+        year=datetime.now().year
+    )
+
+
+@app.route('/blank')
+def blank():
+    """Renders the blank page."""
+    return render_template(
+        'blank.html',
+        title='Blank Page | YouLibry eLearning Facility ',
+        year=datetime.now().year
+    )
+
+
+"""  Below consideration for Version/Stage 2  """
 
 @app.route('/account')
 def account():
@@ -169,15 +222,6 @@ def account():
     return render_template(
         'account.html',
         title='account',
-        year=datetime.now().year
-    )
-
-@app.route('/profile')
-def profile():
-    """Renders the contact page."""
-    return render_template(
-        'profile.html',
-        title='Profile | YouLibry eLearning Facility ',
         year=datetime.now().year
     )
 
@@ -190,13 +234,12 @@ def upload():
         year=datetime.now().year
     )
 
-
-@app.route('/settings')
-def settings():
+@app.route('/uploadvideo')
+def uploadvideo():
     """Renders the contact page."""
     return render_template(
-        'settings.html',
-        title='settings',
+        'upload-video.html',
+        title='upload video',
         year=datetime.now().year
     )
 
@@ -210,11 +253,20 @@ def library_account():
         year=datetime.now().year
     )
 
-@app.route('/register')
-def register():
+@app.route('/videopage')
+def videopage():
     """Renders the contact page."""
     return render_template(
-        'login.html',
+        'video-page.html',
+        title='video page',
+        year=datetime.now().year
+    )
+
+@app.route('/courses')
+def courses():
+    """Renders the contact page."""
+    return render_template(
+        'courses.html',
         title='library account',
         year=datetime.now().year
     )

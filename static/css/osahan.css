@@ -1164,13 +1164,13 @@ fieldset:disabled a.btn {
 }
 /* Login Pages */
  .login-main-wrapper {
-     background: #ff0000;
+     background: #0700c2;
     /* Old browsers */
-     background: -moz-linear-gradient(-45deg, #ff0000 0%, #e41e1d 100%);
+     background: -moz-linear-gradient(-45deg, #0700c2 0%, #0e0041ef 100%);
     /* FF3.6-15 */
-     background: -webkit-linear-gradient(-45deg, #ff0000 0%,#e41e1d 100%);
+     background: -webkit-linear-gradient(-45deg, #0700c2 0%,#0e0041ef 100%);
     /* Chrome10-25,Safari5.1-6 */
-     background: linear-gradient(135deg, #ff0000 0%,#e41e1d 100%);
+     background: linear-gradient(135deg, #0800ff 0%,#0e0041ef 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#e41e1d',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */
